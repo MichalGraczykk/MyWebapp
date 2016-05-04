@@ -1,0 +1,166 @@
+body
+{
+    background-color: #505050;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    margin:0px;
+}
+
+.wrapper
+{
+    width:100%;
+    min-width:1350px;
+}
+
+.header
+{
+    width:1000px ;
+    color: #3388ee;
+    padding: 20px 0; 
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-size: 40px;
+}
+/*padding pierwsza wartosc oznacza zapis w pionie a druga w poziomie */
+
+.container
+{
+    width:1000px;	
+    margin-left:auto;
+    margin-right:auto;
+    text-align:justify;
+    padding-top:10px;
+}
+
+.socialmedia
+{
+    width:1000px;
+    text-align:center;
+    background-color: #404040;
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.footer
+{
+    width:990px;
+    text-align:center;
+    background-color:#303030;
+    padding:5px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.fb
+{
+    width:333px;
+    height: 110px;
+    float:left;
+    border-radius: 20px 0px 0px 0px;
+}
+.fb:hover
+{
+    background-color:#4668b3;
+}
+
+.yt
+{
+    width:333px;
+    height: 110px;
+    float:left;
+}
+.yt:hover
+{
+    background-color:#d94348;
+}
+
+.tw
+{
+    width:333px;
+    height: 110px;
+    float:left;
+    border-radius: 0px 20px 0px 0px;
+}
+.tw:hover
+{
+    background-color:#3095d3;
+}
+
+.navigation
+{
+    width:1000px;
+    text-align:center;
+    height:45px;
+    background-color:#55bbff;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #88eeff;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.move
+{
+    width:170px;
+    height:225px;
+    position: fixed;
+    left:0;
+    z-index:100;
+    border-radius: 0px 20px 20px 0px;
+}
+
+ol
+{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    font-size:22px;
+    height:35px;
+    line-height:200%;
+    display:inline-block;
+}
+
+ol a
+{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+
+/* ol > li =dziedziczenie */
+ol > li
+{
+    float:left;
+    width:170px;
+    height:45px;
+}
+
+.move > ol > li 
+{
+    float:none;
+}
+.move ol > li:first-child
+{
+    border-radius: 0px 20px 0px 0px;
+}
+.move ol > li:last-child
+{
+    border-radius: 0px 0px 20px 0px;
+}
+
+ol > li:hover
+{
+    background-color:#4499ff;
+}
+
+ol > li:hover > a
+{
+    color:#0044aa;
+    transition: all 0.4s;
+    transform: scale(1.1);   
+}
