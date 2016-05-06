@@ -3,6 +3,8 @@ package com.michaelcompany.models;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
@@ -11,6 +13,10 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Entity
 @Table(name="user")
 public class User {
+	
+	@ManyToOne
+	@JoinColumn(name="user_id", insertable=false, updatable=false)
+	private Transaction transaction;
 	
 	@Id
 	@Column(name="user_id")

@@ -33,6 +33,10 @@ public class IndexController {
 			  return "indexLogged";
 		  }
 	   }
+	   
+	   User test = new User();
+	   test=UserOperation.findByUserId(3);
+	   
 	   map.put("msg", "jestes niezalogowany");
        return "index";
    }

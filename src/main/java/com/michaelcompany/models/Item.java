@@ -3,6 +3,8 @@ package com.michaelcompany.models;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.NotEmpty;
@@ -10,6 +12,10 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Entity
 @Table(name="item")
 public class Item {
+	
+	@ManyToOne
+	@JoinColumn(name="item_id", insertable=false, updatable=false)
+	private Transaction transaction;
 	
 	@Id
 	@Column(name="item_id")
