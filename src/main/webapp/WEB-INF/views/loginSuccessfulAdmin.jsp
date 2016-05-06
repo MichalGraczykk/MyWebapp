@@ -18,7 +18,7 @@
 <body>
 	<div class="wrapper">
 		<jsp:include page="/WEB-INF/views/base/header.jsp" />
-		<jsp:include page="/WEB-INF/views/base/menuLogged.jsp" />
+		<jsp:include page="/WEB-INF/views/base/menuAdmin.jsp" />
 		<div class="container">
 			<div class="loginContainer">
 				Zostałeś/aś zalogowany/a 

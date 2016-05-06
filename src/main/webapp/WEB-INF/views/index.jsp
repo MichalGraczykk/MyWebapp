@@ -19,23 +19,11 @@
 		<jsp:include page="/WEB-INF/views/base/menuDis.jsp" />
 		
 		<div class="container">
-			<p>cp path: ${cp}</p>
-
-			<p>Spring says: ${msg}</p>
-			
-			<a href="logout">Wyloguj</a> <br/>
-			
-			<sec:authorize access="hasRole('admin')">
-			    admin
-			    <sec:authentication property="principal.username" />
-			</sec:authorize>
 			<sec:authorize access="hasRole('ROLE_ANONYMOUS')">
-			    role anonymous
+			    <p>${msg}</p>
 			</sec:authorize>
-			
-			<p>webappRoot: ${webappRoot}</p>
 
-			<p>WEB-INFLorem ipsum dolor sit amet, consectetur adipiscing
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing
 				elit. Praesent vel fringilla velit. Ut molestie ante varius sagittis
 				placerat. Integer sagittis velit eu tellus varius, sed sagittis nibh
 				laoreet. Nullam vulputate leo sed nisi tincidunt faucibus. Sed non

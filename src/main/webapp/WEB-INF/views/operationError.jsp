@@ -3,7 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <c:set var="cp"
 	value="${pageContext.request.servletContext.contextPath}"
 	scope="request" />
@@ -21,8 +20,7 @@
 		<jsp:include page="/WEB-INF/views/base/menuLogged.jsp" />
 		<div class="container">
 			<div class="loginContainer">
-				Zostałeś/aś zalogowany/a 
-				<sec:authentication property="principal.username" />
+				Cos poszło nie tak! <br/>
 			</div>
 		</div>
 		<jsp:include page="/WEB-INF/views/base/socialmedia.jsp" />

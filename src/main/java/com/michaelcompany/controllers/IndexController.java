@@ -27,19 +27,13 @@ public class IndexController {
 		  identification=UserOperation.findByLogin(principal.getName());
 		  if(identification.getRola().equals("admin")){
 			  map.put("msg", "administrator");
+			  return "indexAdmin";
 		  } else if(identification.getRola().equals("client")){
 			  map.put("msg", "klient");
+			  return "indexLogged";
 		  }
-	   } else {
-		   map.put("msg", "jestes niezalogowany");
 	   }
-       
-       /*
-       User y=new User();
-       y=UserOperation.findByUserId(1);
-       y.setUserId(4);
-       UserOperation.save(y);
-       */
+	   map.put("msg", "jestes niezalogowany");
        return "index";
    }
 }

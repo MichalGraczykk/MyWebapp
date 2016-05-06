@@ -7,6 +7,6 @@
 		<li><a href="profile">Profil</a></li>
 		<li><a href="#">Asortyment</a></li>
 		<li><a href="logout">Wyloguj</a></li>
-		<li><a href="kontakt">Kontakt</a></li>
+		<li><a href="properties">Narzędzia</a></li>
 	</ol>
 </div>
